@@ -5,6 +5,6 @@ namespace: istio-system
 resources:
   - namespace.yaml
   - crd.yaml
-  - role.yaml
+  - rbac.yaml
   - deployment.yaml
   - service.yaml
