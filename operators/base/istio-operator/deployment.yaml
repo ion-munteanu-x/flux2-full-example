@@ -1,5 +1,5 @@
 # Source: istio-operator/templates/deployment.yaml
-apiVersion: infrastructure/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   namespace: istio-operator

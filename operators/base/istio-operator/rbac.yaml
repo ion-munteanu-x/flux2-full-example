@@ -59,7 +59,7 @@ rules:
     verbs:
       - '*'
   - apiGroups:
-      - infrastructure
+      - apps
       - extensions
     resources:
       - daemonsets
