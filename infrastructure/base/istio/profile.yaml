@@ -97,6 +97,9 @@ spec:
     accessLogFile: /dev/stdout
     defaultConfig:
       proxyMetadata: {}
+      tracing:
+        zipkin:
+          address: jaeger-collector.observability:9411
     enablePrometheusMerge: true
   profile: demo
   tag: 1.12.1
