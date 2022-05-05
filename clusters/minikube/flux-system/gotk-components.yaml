@@ -5146,7 +5146,7 @@ spec:
     app: notification-controller
   type: ClusterIP
 ---
-apiVersion: apps/v1
+apiVersion: infrastructure/v1
 kind: Deployment
 metadata:
   labels:
@@ -5228,7 +5228,7 @@ spec:
       - emptyDir: {}
         name: temp
 ---
-apiVersion: apps/v1
+apiVersion: infrastructure/v1
 kind: Deployment
 metadata:
   labels:
@@ -5310,7 +5310,7 @@ spec:
       - emptyDir: {}
         name: temp
 ---
-apiVersion: apps/v1
+apiVersion: infrastructure/v1
 kind: Deployment
 metadata:
   labels:
@@ -5397,7 +5397,7 @@ spec:
       - emptyDir: {}
         name: temp
 ---
-apiVersion: apps/v1
+apiVersion: infrastructure/v1
 kind: Deployment
 metadata:
   labels:
