@@ -6,6 +6,8 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m0s
+  dependsOn:
+    - name: system
   sourceRef:
     kind: GitRepository
     name: flux-system
@@ -16,8 +18,8 @@ spec:
     provider: sops
     secretRef:
       name: sops-gpg
-#  postBuild:
-#    substitute: {}
-#    substituteFrom:
-#      - kind: ConfigMap
-#        name: cluster-secrets
+  postBuild:
+    substitute: {}
+    substituteFrom:
+      - kind: ConfigMap
+        name: cluster-secrets
